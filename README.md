@@ -29,7 +29,7 @@ http://api.burrhurr.com/v1/fermentables?offset=20&limit=10
 | 202         | Accepted - the request has been accepted but is not yet completed         |
 | 204         | No Content - The request has been succesful but there is no message body. |
 | 304         | Not Modified                                                              |
-| 400         | Bas Request - The request could not be understood.                        |
+| 400         | Bad Request - The request could not be understood.                        |
 | 403         | Forbidden - The server is refusing to fulfill                             |
 | 404         | Not Found - The requested resource could not be found.                    |
 
@@ -44,16 +44,16 @@ http://api.burrhurr.com/v1/fermentables?offset=20&limit=10
 ## Fermentables
 | Method | Endpoint           | Usage                                  | Returns              |
 | ------ | ------------------ | -------------------------------------- | -------------------- |
-| GET    | /fermentables/     | Get the List of Available Fermentables | Fermentables Objects |
+| GET    | /fermentables      | Get the List of Available Fermentables | Fermentables Objects |
 | GET    | /fermentables/{id} | Get a single fermentable               | fermentable          |
 ## Hops
 | Method | Endpoint | Usage                          | Returns      |
 | ------ | -------- | ------------------------------ | ------------ |
-| GET    | /hops/   | Get the List of Available Hops | Hops Objects |
+| GET    | /hops    | Get the List of Available Hops | Hops Objects |
 ## Misc
 | Method | Endpoint | Usage                          | Returns      |
 | ------ | -------- | ------------------------------ | ------------ |
-| GET    | /misc/   | Get the List of Available Misc | Misc Objects |
+| GET    | /misc    | Get the List of Available Misc | Misc Objects |
 ## Recipes
 | Method | Endpoint | Usage                             | Returns        |
 | ------ | -------- | --------------------------------- | -------------- |
@@ -61,12 +61,12 @@ http://api.burrhurr.com/v1/fermentables?offset=20&limit=10
 ## Equipment
 | Method | Endpoint    | Usage                               | Returns           |
 | ------ | ----------- | ----------------------------------- | ----------------- |
-| GET    | /equipment/ | Get the List of Available equipment | equipment Objects |
+| GET    | /equipment  | Get the List of Available equipment | equipment Objects |
 ## Fermentations
 | Method | Endpoint        | Usage                                   | Returns              |
 | ------ | --------------- | --------------------------------------- | -------------------- |
-| GET    | /fermentations/ | Get the List of Available fermentations | fermentation Objects |
+| GET    | /fermentations  | Get the List of Available fermentations | fermentation Objects |
 ## Yeasts
 | Method | Endpoint | Usage                            | Returns       |
 | ------ | -------- | -------------------------------- | ------------- |
-| GET    | /yeasts/ | Get the List of Available yeasts | yeast Objects |
+| GET    | /yeasts  | Get the List of Available yeasts | yeast Objects |
